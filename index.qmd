@@ -10,6 +10,8 @@ theme: custom.scss
 library(sf)
 mapview::mapviewOptions(default = TRUE,
                         basemaps.color.shuffle = FALSE)
+load("~/OneDrive/proyects/hotspots_eggs/8.RData/20_oaxaca/betas/20_oaxaca_zinb1_betas.RData")
+
 ```
 
 
@@ -1663,12 +1665,232 @@ flexdashboard::gauge(round((sum(y_hot$n_cases)/sum(y$n_cases))*100, digits = 1),
 
 ### [**Oaxaca**]{style="color:#990000"}
 
+```{r vector_hotspots_oaxaca, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20067_oaxaca_1419_zinb1,
+                           locality = "Oaxaca de Juarez",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Santa Cruz Xoxocotlán**]{style="color:#990000"}
+
+```{r vector_hotspots_santa_cruz, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20385_santa_cruz_xoxocotlan_1419_zinb1,
+                                 locality = "Santa Cruz Xoxocotlán",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Santa Lucia del Camino**]{style="color:#990000"}
+
+```{r vector_hotspots_santa_lucia, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20390_santa_lucia_camino1419_zinb1,
+                           locality = "Santa Lucia del Camino",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Matias Romero**]{style="color:#990000"}
+
+```{r vector_hotspots_matias_romero, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20057_matias_romero_1419_zinb1,
+                           locality = "Matias Romero Avendaño",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Loma Bonita**]{style="color:#990000"}
+```{r vector_hotspots_loma_bonita, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20044_loma_bonita_1419_zinb1,
+                           locality = "Loma Bonita",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+### [**San Juan Bautista Tuxtepec**]{style="color:#990000"}
+```{r vector_hotspots_san_juan, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20184_san_juan_bautista_tuxtepec_1419_zinb1,
+                                 locality = "San Juan Bautista Tuxtepec",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Puerto Escondido**]{style="color:#990000"}
+```{r vector_hotspots_pto_escondido, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20318_puerto_escondido_1419_zinb1,
+                                 locality = "Puerto Escondido",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+### [**San Pedro Pochutla**]{style="color:#990000"}
+```{r vector_hotspots_pochutla, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20324_san_pedro_pochutla_1419_zinb1,
+                           locality = "San Pedro Pochutla",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Huatulco**]{style="color:#990000"}
+```{r vector_hotspots_huatulco, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20413_santa_maria_huatulco_1419_zinb1,
+                                 locality = "Santa Maria Huatulco",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+### [**Crucesita**]{style="color:#990000"}
+```{r vector_hotspots_crucesita, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20413_crucesita1419_zinb1,
+                                 locality = "Crucesita",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Santiago de Pinotepa Nacional**]{style="color:#990000"}
+```{r vector_hotspots_pinotepa, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20482_santiago_pinotepa_nacional_1419_zinb1,
+                                 locality = "Santiago de Pinotepa Nacional",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### [**Putla**]{style="color:#990000"}
+```{r vector_hotspots_putla, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20073_putla_villa_1419_zinb1,
+                           locality = "Putla Villa de Guerrero",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+### [**Juchitan**]{style="color:#990000"}
+```{r vector_hotspots_juchitan, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20043_juchitan_1419_zinb1,
+                           locality = "Heroica Ciudad de Juchitan de Zaragoza",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+### [**San Juan Bautista**]{style="color:#990000"}
+```{r vector_hotspots_san_juan_bautista_valle, dpi = 300, warning=FALSE, message=FALSE}
+deneggs::map_eggs_hotspots(betas = betas_20559_san_juan_bautista_nacional_1419_zinb1,
+                           locality = "San Juan Bautista Valle Nacional",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+
 
 :::
 
 # [**Escenarios Epidemiológicos**]{style="font-size:2pt"}
 
 ::: panel-tabset
+
+### [**Oaxaca**]{style="color:#990000"}
+
+```{r risk_ageb_aaxaca}
+denhotspots::risk_ageb(betas = betas_20067_oaxaca_1419_zinb1,
+                       hotspots = denmex::den_hotspots,
+                       intensity_perc = 25,
+                       locality = "Oaxaca de Juarez",
+                       cve_edo = "20") |>
+    denhotspots::map_risk(staticmap = FALSE)
+```
+
+
+### [**Pinotepa**]{style="color:#990000"}
+
+```{r risk_ageb_pinotepa}
+denhotspots::risk_ageb(betas = betas_20482_santiago_pinotepa_nacional_1419_zinb1,
+                       hotspots = denmex::den_hotspots,
+                       intensity_perc = 25,
+                       locality = "Santiago Pinotepa Nacional",
+                       cve_edo = "20") |>
+    denhotspots::map_risk(staticmap = FALSE)
+```
+
+### [**Juchitan**]{style="color:#990000"}
+
+```{r risk_ageb_juchitan}
+denhotspots::risk_ageb(betas = betas_20043_juchitan_1419_zinb1,
+                       hotspots = denmex::den_hotspots,
+                       intensity_perc = 25,
+                       locality = "Heroica Ciudad de Juchitán de Zaragoza",
+                       cve_edo = "20") |>
+    denhotspots::map_risk(staticmap = FALSE)
+```
+
+### [**San Juan Bautista Tuxtepec**]{style="color:#990000"}
+
+```{r risk_ageb_san_juan_bautista_tuxtepec}
+denhotspots::risk_ageb(betas = betas_20184_san_juan_bautista_tuxtepec_1419_zinb1,
+                       hotspots = denmex::den_hotspots,
+                       intensity_perc = 25,
+                       locality = "San Juan Bautista Tuxtepec",
+                       cve_edo = "20") |>
+    denhotspots::map_risk(staticmap = FALSE)
+```
+
+
+### [**Puerto Escondido**]{style="color:#990000"}
+
+```{r risk_ageb_pto_escondido}
+denhotspots::risk_ageb(betas = betas_20318_puerto_escondido_1419_zinb1,
+                       hotspots = denmex::den_hotspots,
+                       intensity_perc = 25,
+                       locality = "Puerto Escondido",
+                       cve_edo = "20") |>
+    denhotspots::map_risk(staticmap = FALSE)
+```
+
+### [**Huatulco**]{style="color:#990000"}
+
+```{r risk_ageb_huatulco}
+denhotspots::risk_ageb(betas = betas_20413_santa_maria_huatulco_1419_zinb1,
+                       hotspots = denmex::den_hotspots,
+                       intensity_perc = 25,
+                       locality = "Santa Maria Huatulco",
+                       cve_edo = "20") |>
+    denhotspots::map_risk(staticmap = FALSE)
+```
 
 
 
