@@ -13,7 +13,20 @@ mapview::mapviewOptions(default = TRUE,
 ```
 
 
-# [**Hotspots de Dengue**]{style="font-size:2pt"}
+# [**Hotspots de la Transmision de Dengue**]{style="font-size:2pt"}
+
+::: panel-tabset
+
+:::
+
+
+# [**Hotspots del Vector**]{style="font-size:2pt"}
+
+::: panel-tabset
+
+:::
+
+# [**Escenarios Epidemiológicos**]{style="font-size:2pt"}
 
 ::: panel-tabset
 
