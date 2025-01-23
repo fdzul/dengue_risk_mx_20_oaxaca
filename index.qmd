@@ -84,7 +84,7 @@ loc <- rgeomex::extract_locality(cve_edo = "20",
                                  locality = "Oaxaca de Juarez")
 
 # Step 2. Extract the hotspots ####
-hotspots <- hotspotsdata::den_hotspots[loc, ]
+hotspots <- hotspotsdata::hotspots_hex[loc, ]
 mapview::mapview(hotspots,
                  zcol = "intensity_gi",
                  layer.name = "Intensidad",
